@@ -1,0 +1,13 @@
+<h1 id="tableLabel">Belfast 5 Day Weather Forecast</h1>
+
+<p *ngIf="!forecasts"><em>Loading forecasts...</em></p>
+<table class='table table-striped' aria-labelledby="tableLabel" *ngIf="forecasts">
+  <tbody>
+    <tr *ngFor="let forecast of forecasts">
+      <td>{{ forecast.date | date:'mediumDate' }}</td>
+      <td>{{ forecast.state }}</td>
+      <td><img class="forecast-img" src="{{ forecast.imgUrl }}"></td>
+    </tr>
+  </tbody>
+</table>
+<button (click)="getForecast()">Refresh</button>
