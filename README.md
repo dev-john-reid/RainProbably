@@ -14,6 +14,8 @@ This then left me with a bit of a conundrum; Does "the next 5 days" include toda
 
 I used IdentityServerSPA for authentication as it comes out of the box in VS and was adequate for my needs here, allowing me to lock the forecast requests behind an Authorize only controller. The project includes the migration required to setup the SQL tables for this but I have not included any DB files.
 
+## Example Forecast
+<p align="center"><img src="https://i.imgur.com/1zB4NrM.png" /></p>
 
 
     
