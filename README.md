@@ -1,4 +1,6 @@
-# RainProbably - A simple web app for viewing the next 5 days of weather for Belfast, NI.
+<p align="center"><img src="https://github.com/dev-john-reid/RainProbably/blob/master/ClientApp/src/assets/rp.png"  width="300" height="300" /></p>
+
+# A simple web app for viewing the next 5 days of weather for Belfast, NI.
 
 Being a little unfamiliar with .Net core and having not created an Angular app from scratch for the last couple of years, I started this project by simply creating an Angular/WebAPI solution in Visual Studio and building on what it gave me. This actually allowed to me to meet the brief without having to put a masive amount of work into getting the project set up, enabling me to focus on getting the interactions with the 3rd party API correct.
 
