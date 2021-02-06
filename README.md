@@ -8,9 +8,9 @@ The brief stated that "The application will communicate to the following REST AP
 
 Another note on API interactions is that, whilst you can request forecast data for a specific date and location, I found that making a single summary request for a location would give you details of 6 days of weather for the location, starting from today. I figured that using the data from this 1 request to populate the data needed for the page would be more efficient than making 5 separate ones. 
 
-This then left me with a bit of a conundrum; Does "the next 5 days" include today? I decided to go with no, despite feeling that as a user I would expect today's data to be in a 5 day forecast, this is purely because the word "next" is always used when referring to the 5 days and if this were a real project I would almost certainly have an opportunity to confer and clarify on what the requirement here was.
+This then left me with a bit of a conundrum; Does "the next 5 days" include today? I decided to go with no, despite feeling that as a user I would expect today's data to be in a 5 day forecast, this is purely because in the brief the word "next" is always used when referring to the 5 days. If this were a real project I would almost certainly have an opportunity to confer and clarify on what the requirement here was.
 
-I used IdentityServerSPA authentication as it comes out of the box in VS and was adequate for my needs here, allowing me to lock the forecast requests behind an Authorize only controller.
+I used IdentityServerSPA for authentication as it comes out of the box in VS and was adequate for my needs here, allowing me to lock the forecast requests behind an Authorize only controller. The project includes the migration required to setup the SQL tables for this but I have not included any DB files.
 
 
 
